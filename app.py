@@ -5,7 +5,7 @@ import threading
 app = Flask(__name__)
 
 # --- YAHAN APNA TOKEN DAALEIN ---
-TOKEN = "8336641602:AAHgupFEkMwm1M_g81jfXB1qWkj3KSNuhd8"
+TOKEN = "YAHAN_BOTFATHER_WALA_TOKEN_PASTE_KAREIN"
 bot = telebot.TeleBot(TOKEN)
 
 # Aapka XM Affiliate Link
@@ -13,12 +13,12 @@ XM_LINK = "https://www.xm.com/register/profile-account?utm_source=android-app:%2
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    text = f"Welcome! VIP Trading group me add hone ke liye:\n\nStep 1: Is link par click karke naya XM account banayein:\n{XM_LINK}\n\nStep 2: Account banne ke baad, apna XM Account ID yahan reply me bhejein."
+    text = f"Welcome! To join our VIP Trading group:\n\nStep 1: Please create a new XM account by clicking this link:\n{XM_LINK}\n\nStep 2: After creating the account, reply to this message with your XM Account ID or Registered Email."
     bot.reply_to(message, text)
 
 @bot.message_handler(func=lambda msg: True)
 def handle_id(message):
-    bot.reply_to(message, "✅ Aapki ID mil gayi hai! Hum ise verify kar rahe hain. Sahi hone par aapko isi chat mein VIP group ka link mil jayega.")
+    bot.reply_to(message, "✅ Your details have been received! We are currently verifying your account. Once successfully verified, you will receive the VIP group link in this chat shortly.")
 
 def run_bot():
     bot.infinity_polling()
