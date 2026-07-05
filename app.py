@@ -5,7 +5,7 @@ import threading
 app = Flask(__name__)
 
 # --- YAHAN APNA TOKEN DAALEIN ---
-TOKEN = "YAHAN_BOTFATHER_WALA_TOKEN_PASTE_KAREIN"
+TOKEN = "8336641602:AAHgupFEkMwm1M_g81jfXB1qWkj3KSNuhd8"
 bot = telebot.TeleBot(TOKEN)
 
 # Aapka XM Affiliate Link
