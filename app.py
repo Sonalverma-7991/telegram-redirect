@@ -5,14 +5,14 @@ import threading
 app = Flask(__name__)
 
 # --- YAHAN APNA TOKEN DAALEIN ---
-TOKEN = "8336641602:AAHgupFEkMwm1M_g81jfXB1qWkj3KSNuhd8"
+TOKEN = "8890468106:AAEEDaUa2cM2zkLgS_b_rt7JfIz3eCnJgdk"
 bot = telebot.TeleBot(TOKEN)
 
 # Aapka XM Affiliate Link
 XM_LINK = "https://www.xm.com/register/profile-account?utm_source=android-app:%2F%2Fcom.google.android.googlequicksearchbox%2F&utm_content=1280834&utm_medium=affiliate&clickid=c913dbb4-4147-4a73-99d6-840db21d51d8"
 
 # --- YAHAN APNE VIP GROUP KA LINK DAALEIN ---
-VIP_GROUP_LINK = "https://t.me/legacytradingfemme"
+VIP_GROUP_LINK = "https://t.me/fmevaulthq"
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
