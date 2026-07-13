@@ -5,7 +5,7 @@ import threading
 app = Flask(__name__)
 
 # Your Bot Token
-TOKEN = "8890468186:AAEEDaUa2cMZkLgS_b_rt7JfIz3eCnjgdk"
+TOKEN = "8890468106:AAEEDaUa2cM2zkLgS_b_rt7JfIz3eCnJgdk"
 bot = telebot.TeleBot(TOKEN)
 
 # Your Affiliate Links
